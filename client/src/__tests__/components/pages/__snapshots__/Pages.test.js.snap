@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render component renders component 1`] = `
+<div>
+  <ConnectFunction
+    key="1"
+    pageNumber={1}
+  />
+  <ConnectFunction
+    key="2"
+    pageNumber={2}
+  />
+  <ConnectFunction
+    key="3"
+    pageNumber={3}
+  />
+  <ConnectFunction
+    key="4"
+    pageNumber={4}
+  />
+  <ConnectFunction
+    key="5"
+    pageNumber={5}
+  />
+  <ConnectFunction
+    key="6"
+    pageNumber={6}
+  />
+  <ConnectFunction
+    key="7"
+    pageNumber={7}
+  />
+</div>
+`;
