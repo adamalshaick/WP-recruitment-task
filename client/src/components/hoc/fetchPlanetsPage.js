@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Loading from "../common/Loading";
 import { getPlanetsPage } from "../../actions/planetsActions";
+import PropTypes from "prop-types";
 
 export default ChildComponent => {
   class ComposedComponent extends Component {
@@ -16,6 +17,11 @@ export default ChildComponent => {
       return <ChildComponent {...this.props} />;
     }
   }
+
+  ComposedComponent.propTypes = {
+    planets: PropTypes.object.isRequired,
+    getPlanetsPage: PropTypes.func.isRequired
+  };
 
   const mapStateToProps = state => ({
     planets: state.planets
