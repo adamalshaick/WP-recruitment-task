@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Loading from "../common/Loading";
 import { getPlanetsPage } from "../../actions/planetsActions";
 import PropTypes from "prop-types";
 
 export default ChildComponent => {
   class ComposedComponent extends Component {
-    componentDidMount() {
-      this.props.getPlanetsPage(this.props.pageNumber);
-    }
-    render() {
-      const { planets } = this.props.planets;
-      if (!planets) {
-        return <Loading />;
+    componentDidUpdate(prevProps, prevState) {
+      if (prevProps.pageNumber !== this.props.pageNumber) {
+        // this.props.pageNumber === "1"
+        //   ? this.props.getPlanetsPage(1)
+        //   :
+        this.props.getPlanetsPage(this.props.pageNumber);
       }
+    }
+
+    render() {
       return <ChildComponent {...this.props} />;
     }
   }
