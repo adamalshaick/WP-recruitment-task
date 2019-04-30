@@ -1,18 +1,19 @@
-import { GET_PLANETS } from "./types";
+import { GET_PLANETS, GET_PAGES, PLANETS_LOADING } from "./types";
 import axios from "axios";
 
-// Get planets
-export const getPlanets = () => {
+// Get number of elements
+export const getPages = () => {
   return async dispatch => {
+    dispatch(setPlanetsLoading);
     try {
       const planets = await axios.get("https://swapi.co/api/planets/");
       dispatch({
-        type: GET_PLANETS,
+        type: GET_PAGES,
         payload: planets.data
       });
     } catch {
       dispatch({
-        type: GET_PLANETS,
+        type: GET_PAGES,
         payload: null
       });
     }
@@ -22,6 +23,7 @@ export const getPlanets = () => {
 // Get planets page
 export const getPlanetsPage = pageNumber => {
   return async dispatch => {
+    dispatch(setPlanetsLoading());
     try {
       const planets = await axios.get(
         `https://swapi.co/api/planets/?page=${pageNumber}`
@@ -36,5 +38,12 @@ export const getPlanetsPage = pageNumber => {
         payload: null
       });
     }
+  };
+};
+
+// Set planets loading
+export const setPlanetsLoading = () => {
+  return {
+    type: PLANETS_LOADING
   };
 };
