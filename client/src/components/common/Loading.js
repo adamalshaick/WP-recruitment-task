@@ -1,7 +1,8 @@
 import React from "react";
+import { Dots } from "./styles/Loading";
 
 export const Loading = () => {
-  return <div>loading</div>;
+  return <Dots>...</Dots>;
 };
 
 export default Loading;

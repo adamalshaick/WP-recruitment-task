@@ -1,5 +1,5 @@
 import React from "react";
-import fetchPlanets from "../hoc/fetchPlanets";
+import fetchNumberOfPages from "../hoc/fetchNumberOfPages";
 import Pages from "../pages/Pages";
 import PropTypes from "prop-types";
 
@@ -11,4 +11,4 @@ Landing.propTypes = {
   planets: PropTypes.object.isRequired
 };
 
-export default fetchPlanets(Landing);
+export default fetchNumberOfPages(Landing);
