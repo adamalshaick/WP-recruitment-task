@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render component renders button component 1`] = `
+.c0 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 4rem;
+  opacity: 0.5;
+  -webkit-animation: eUdeMN 1.5s infinite;
+  animation: eUdeMN 1.5s infinite;
+}
+
+<div
+  className="c0"
+/>
+`;
