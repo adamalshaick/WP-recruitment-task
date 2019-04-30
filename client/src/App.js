@@ -9,7 +9,7 @@ export const App = () => {
     <Router>
       <Suspense fallback={<Loading />}>
         <Switch>
-          <Route exact patch="/" component={Landing} />
+          <Route exact path="/" component={Landing} />
           <Route component={NotFound} />
         </Switch>
       </Suspense>
