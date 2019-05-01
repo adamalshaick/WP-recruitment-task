@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`planet info functionality when active renders component 1`] = `
+<styled.section
+  active={true}
+>
+  <styled.header>
+     planet details
+    <hr />
+  </styled.header>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      <p>
+        rotation period: 
+      </p>
+      <p>
+        orbital period: 
+      </p>
+      <p>
+        diameter: 
+      </p>
+      <p>
+        climate: 
+      </p>
+      <p>
+        films:
+        <ComposedComponent
+          function={
+            Object {
+              "title": "title1",
+            }
+          }
+        />
+        <ComposedComponent
+          function={
+            Object {
+              "title": "title2",
+            }
+          }
+        />
+        <ComposedComponent
+          function={
+            Object {
+              "title": "title3",
+            }
+          }
+        />
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      <p>
+        surface water: 
+      </p>
+      <p>
+        population: 
+      </p>
+      <p>
+        terrain: 
+      </p>
+      <p>
+        gravity: 
+      </p>
+      <p>
+        residents:
+        <ComposedComponent
+          function={
+            Object {
+              "name": "resident1",
+            }
+          }
+        />
+        <ComposedComponent
+          function={
+            Object {
+              "name": "resident2",
+            }
+          }
+        />
+      </p>
+    </div>
+  </div>
+</styled.section>
+`;
+
+exports[`planet info functionality when disabled renders component 1`] = `
+<styled.section
+  active={false}
+>
+  <styled.header>
+     planet details
+    <hr />
+  </styled.header>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      <p>
+        rotation period: 
+      </p>
+      <p>
+        orbital period: 
+      </p>
+      <p>
+        diameter: 
+      </p>
+      <p>
+        climate: 
+      </p>
+      <p>
+        films:
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      <p>
+        surface water: 
+      </p>
+      <p>
+        population: 
+      </p>
+      <p>
+        terrain: 
+      </p>
+      <p>
+        gravity: 
+      </p>
+      <p>
+        residents:
+      </p>
+    </div>
+  </div>
+</styled.section>
+`;

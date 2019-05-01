@@ -1,7 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render component renders component 1`] = `
-<div>
-  dd
-</div>
+<styled.table>
+  <styled.tr>
+    <styled.td>
+      Name
+    </styled.td>
+    <styled.td>
+      Diameter
+    </styled.td>
+    <styled.td>
+      Climate
+    </styled.td>
+    <styled.td>
+      Gravity
+    </styled.td>
+    <styled.td>
+      Population
+    </styled.td>
+  </styled.tr>
+  <Planet
+    planet={
+      Object {
+        "name": "name",
+      }
+    }
+  />
+  <Planet
+    planet={
+      Object {
+        "name": "name2",
+      }
+    }
+  />
+</styled.table>
 `;

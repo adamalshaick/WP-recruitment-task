@@ -17,14 +17,10 @@ describe("render component", () => {
   });
 
   describe("pages functionality", () => {
-    it("returns correct number of Page components", () => {
-      expect(wrapper.find(Page).length).toEqual(7);
-    });
-
     it("gives each Page component correct page number", () => {
       let i = 1;
       wrapper.find(Page).forEach(node => {
-        expect(node.props().pageNumber).toEqual(i);
+        expect(node.props().pageNumber).toEqual(`${i}`);
         i = i + 1;
       });
     });
