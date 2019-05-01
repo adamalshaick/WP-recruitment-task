@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NotFoundWrapper, Button } from "./styles/NotFound";
 
 export const NotFound = () => {
   return (
-    <div>
-      Sorry, this page doesn't exist
-      <Link to="/">Back to the main page</Link>
-    </div>
+    <NotFoundWrapper>
+      <h1>Sorry, this page doesn't exist</h1>
+      <Button to="/">Back to the main page</Button>
+    </NotFoundWrapper>
   );
 };
 

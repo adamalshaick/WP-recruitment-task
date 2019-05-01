@@ -1,9 +1,9 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const PlanetCard = styled.section`
-  position: fixed;
+  position: absolute;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   background-color: white;
   opacity: ${props => (props.active ? "1" : "0")};
@@ -12,7 +12,7 @@ export const PlanetCard = styled.section`
   padding: 2rem;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
-  z-index: 1;
+  z-index: 2;
 `;
 
 export const PlanetWrapper = styled.div`

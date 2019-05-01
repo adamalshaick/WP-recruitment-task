@@ -21,8 +21,3 @@ export const Dots = styled.div`
   opacity: 0.5;
   animation: ${load} 1.5s infinite;
 `;
-
-export const TableWrapper = styled.div`
-  height: 500px;
-  width: 100%;
-`;

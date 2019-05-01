@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const ButtonsCard = styled.span`
   background-color: white;
@@ -6,18 +6,12 @@ export const ButtonsCard = styled.span`
   width: 500px;
   height: 50px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  position: relative;
+  position: absolute;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
 `;
 
-export const dd = styled.div`
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-
-  display: flex;
-  justify-content: space-evenly;
-`;
 export const Button = styled.a`
   line-height: 50px;
   text-decoration: none;
