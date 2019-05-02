@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { TableRow, TableElement, TableName } from "../common/styles/Table";
-import { PlanetCard, PlanetWrapper } from "../common/styles/Planet";
+import { PlanetWrapper } from "../common/styles/Planet";
 import PlanetInfo from "./PlanetInfo";
+import PropTypes from "prop-types";
 
 export class Planet extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export class Planet extends Component {
   render() {
     return (
       <>
-        <TableRow onClick={this.onClick} active={this.props.toggled}>
+        <TableRow onClick={this.onClick} active={this.state.showPlanetInfo}>
           <TableName>{this.props.planet.name}</TableName>
           <TableElement>{this.props.planet.diameter}</TableElement>
           <TableElement>{this.props.planet.climate}</TableElement>
@@ -41,26 +42,8 @@ export class Planet extends Component {
   }
 }
 
+Planet.propTypes = {
+  planet: PropTypes.object.isRequired
+};
+
 export default Planet;
-
-// import React from "react";
-// import { TableRow, TableElement, TableName } from "../common/styles/Table";
-// import { PlanetCard, PlanetWrapper } from "../common/styles/Planet";
-// import PlanetInfo from "./PlanetInfo";
-
-// export const Planet = ({ planet, active, onToggle }) => {
-//   return (
-//     <>
-//       <TableRow onClick={onToggle} active={active}>
-//         <TableName>{planet.name}</TableName>
-//         <TableElement>{planet.diameter}</TableElement>
-//         <TableElement>{planet.climate}</TableElement>
-//         <TableElement>{planet.gravity}</TableElement>
-//         <TableElement>{planet.population}</TableElement>
-//       </TableRow>
-//       {active ? <PlanetInfo active={active} planet={planet} /> : null}
-//     </>
-//   );
-// };
-
-// export default Planet;

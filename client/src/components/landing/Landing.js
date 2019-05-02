@@ -4,7 +4,7 @@ import Pages from "../pages/Pages";
 import PropTypes from "prop-types";
 
 export const Landing = ({ planets }) => {
-  return <Pages planets={planets}>dd</Pages>;
+  return <Pages planets={planets} />;
 };
 
 Landing.propTypes = {

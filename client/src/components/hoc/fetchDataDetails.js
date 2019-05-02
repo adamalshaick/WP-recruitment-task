@@ -28,5 +28,10 @@ export default ChildComponent => {
       } else return <ChildComponent {...this.state} />;
     }
   }
+
+  ComposedComponent.propTypes = {
+    function: PropTypes.func.isRequired
+  };
+
   return ComposedComponent;
 };

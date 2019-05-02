@@ -2,6 +2,7 @@ import React from "react";
 import { PlanetCard, CardHeader } from "../common/styles/Planet";
 import Films from "./Films";
 import Residents from "./Residents";
+import PropTypes from "prop-types";
 
 export const PlanetInfo = ({ active, planet }) => {
   return (
@@ -16,6 +17,7 @@ export const PlanetInfo = ({ active, planet }) => {
           <p>orbital period: {planet.orbital_period}</p>
           <p>diameter: {planet.diameter}</p>
           <p>climate: {planet.climate}</p>
+
           <p>
             films:
             {active
@@ -42,6 +44,11 @@ export const PlanetInfo = ({ active, planet }) => {
       </div>
     </PlanetCard>
   );
+};
+
+PlanetInfo.propTypes = {
+  planet: PropTypes.object.isRequired,
+  active: PropTypes.bool.isRequired
 };
 
 export default PlanetInfo;

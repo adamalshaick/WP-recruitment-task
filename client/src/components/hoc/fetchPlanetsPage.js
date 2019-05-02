@@ -7,9 +7,6 @@ export default ChildComponent => {
   class ComposedComponent extends Component {
     componentDidUpdate(prevProps, prevState) {
       if (prevProps.pageNumber !== this.props.pageNumber) {
-        // this.props.pageNumber === "1"
-        //   ? this.props.getPlanetsPage(1)
-        //   :
         this.props.getPlanetsPage(this.props.pageNumber);
       }
     }

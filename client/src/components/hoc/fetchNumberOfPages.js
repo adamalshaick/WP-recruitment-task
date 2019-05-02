@@ -20,7 +20,7 @@ export default ChildComponent => {
 
   ComposedComponent.propTypes = {
     planets: PropTypes.object.isRequired,
-    getPlanets: PropTypes.func.isRequired
+    getPages: PropTypes.func.isRequired
   };
 
   const mapStateToProps = state => ({

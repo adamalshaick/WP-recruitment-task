@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render component renders component 1`] = `
+<BrowserRouter>
+  <React.Suspense
+    fallback={<Loading />}
+  >
+    <Switch>
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.lazy),
+            "_ctor": [Function],
+            "_result": null,
+            "_status": -1,
+          }
+        }
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.lazy),
+            "_ctor": [Function],
+            "_result": null,
+            "_status": -1,
+          }
+        }
+      />
+    </Switch>
+  </React.Suspense>
+</BrowserRouter>
+`;

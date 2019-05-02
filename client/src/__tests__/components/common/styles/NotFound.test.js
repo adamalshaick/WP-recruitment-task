@@ -11,8 +11,4 @@ describe("render component", () => {
     const component = renderer.create(<NotFoundWrapper />).toJSON();
     expect(component).toMatchSnapshot();
   });
-  it("renders button component", () => {
-    const component = renderer.create(<Button />).toJSON();
-    expect(component).toMatchSnapshot();
-  });
 });

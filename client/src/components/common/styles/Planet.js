@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PlanetCard = styled.section`
+export const PlanetCard = styled.tr`
   position: absolute;
   left: 50%;
   top: 60%;
@@ -15,7 +15,7 @@ export const PlanetCard = styled.section`
   z-index: 2;
 `;
 
-export const PlanetWrapper = styled.div`
+export const PlanetWrapper = styled.tr`
   width: 100%;
   height: 100%;
   background-color: white;

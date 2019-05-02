@@ -22,7 +22,7 @@ export class Pages extends Component {
 
     for (let i = 1; i <= pagesCount; i++) {
       buttons.push(
-        <Button className="m-2" href="#" onClick={this.onClick(i)}>
+        <Button key={i} className="m-2" href="#" onClick={this.onClick(i)}>
           {i}
         </Button>
       );
