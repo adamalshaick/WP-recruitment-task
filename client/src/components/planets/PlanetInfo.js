@@ -1,12 +1,13 @@
 import React from "react";
-import { PlanetCard, CardHeader } from "../common/styles/Planet";
+import { PlanetCard, CardHeader, CloseButton } from "../common/styles/Planet";
 import Films from "./Films";
 import Residents from "./Residents";
 import PropTypes from "prop-types";
 
-export const PlanetInfo = ({ active, planet }) => {
+export const PlanetInfo = ({ active, planet, onToggle }) => {
   return (
     <PlanetCard active={active}>
+      <CloseButton onClick={onToggle} className="far fa-window-close" />
       <CardHeader>
         {planet.name} planet details
         <hr />
@@ -51,7 +52,8 @@ export const PlanetInfo = ({ active, planet }) => {
 
 PlanetInfo.propTypes = {
   planet: PropTypes.object.isRequired,
-  active: PropTypes.bool.isRequired
+  active: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired
 };
 
 export default PlanetInfo;

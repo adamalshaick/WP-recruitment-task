@@ -34,3 +34,15 @@ export const CardHeader = styled.header`
   font-size: 20px;
   font-weight: 500;
 `;
+
+export const CloseButton = styled.i`
+  color: red;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;

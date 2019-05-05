@@ -32,6 +32,7 @@ export class Planet extends Component {
         <PlanetInfo
           active={this.state.showPlanetInfo}
           planet={this.props.planet}
+          onToggle={this.onClick}
         />
         <PlanetWrapper
           active={this.state.showPlanetInfo}

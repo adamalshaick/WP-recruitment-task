@@ -15,13 +15,16 @@ export const Table = styled.table`
   background-color: white;
   width: 70%;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   border-spacing: 0;
   margin-top: 4rem;
   margin-bottom: 2rem;
   animation: ${entry} 0.5s;
   min-height: 500px;
+
+  @media (min-width: 1000px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `;
 
 export const TableRow = styled.tr`
