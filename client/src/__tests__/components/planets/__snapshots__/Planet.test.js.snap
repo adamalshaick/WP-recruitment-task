@@ -14,9 +14,10 @@ exports[`render component renders component 1`] = `
   </styled.tr>
   <PlanetInfo
     active={false}
+    onToggle={[Function]}
     planet={Object {}}
   />
-  <styled.div
+  <styled.tr
     active={false}
     onClick={[Function]}
   />

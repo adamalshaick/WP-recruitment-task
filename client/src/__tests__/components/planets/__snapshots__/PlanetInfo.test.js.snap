@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`planet info functionality when active renders component 1`] = `
-<styled.section
+<styled.tr
   active={true}
 >
+  <styled.i
+    className="far fa-window-close"
+  />
   <styled.header>
      planet details
     <hr />
@@ -34,6 +37,14 @@ exports[`planet info functionality when active renders component 1`] = `
       <p>
         climate: 
       </p>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
       <p>
         films:
         <ComposedComponent
@@ -67,18 +78,6 @@ exports[`planet info functionality when active renders component 1`] = `
       }
     >
       <p>
-        surface water: 
-      </p>
-      <p>
-        population: 
-      </p>
-      <p>
-        terrain: 
-      </p>
-      <p>
-        gravity: 
-      </p>
-      <p>
         residents:
         <ComposedComponent
           function={
@@ -96,14 +95,37 @@ exports[`planet info functionality when active renders component 1`] = `
         />
       </p>
     </div>
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      <p>
+        surface water: 
+      </p>
+      <p>
+        population: 
+      </p>
+      <p>
+        terrain: 
+      </p>
+      <p>
+        gravity: 
+      </p>
+    </div>
   </div>
-</styled.section>
+</styled.tr>
 `;
 
 exports[`planet info functionality when disabled renders component 1`] = `
-<styled.section
+<styled.tr
   active={false}
 >
+  <styled.i
+    className="far fa-window-close"
+  />
   <styled.header>
      planet details
     <hr />
@@ -134,8 +156,27 @@ exports[`planet info functionality when disabled renders component 1`] = `
       <p>
         climate: 
       </p>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
       <p>
         films:
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      <p>
+        residents:
       </p>
     </div>
     <div
@@ -157,10 +198,7 @@ exports[`planet info functionality when disabled renders component 1`] = `
       <p>
         gravity: 
       </p>
-      <p>
-        residents:
-      </p>
     </div>
   </div>
-</styled.section>
+</styled.tr>
 `;

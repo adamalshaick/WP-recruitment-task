@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render component renders component 1`] = `
+<styled.section>
+  <h1>
+    Sorry, this page doesn't exist
+  </h1>
+  <Styled(Link)
+    to="/"
+  >
+    Back to the main page
+  </Styled(Link)>
+</styled.section>
+`;

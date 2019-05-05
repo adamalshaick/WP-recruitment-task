@@ -9,6 +9,7 @@ exports[`render component renders component 1`] = `
     <styled.a
       className="m-2"
       href="#"
+      key="1"
       onClick={[Function]}
     >
       1
@@ -16,6 +17,7 @@ exports[`render component renders component 1`] = `
     <styled.a
       className="m-2"
       href="#"
+      key="2"
       onClick={[Function]}
     >
       2
@@ -23,6 +25,7 @@ exports[`render component renders component 1`] = `
     <styled.a
       className="m-2"
       href="#"
+      key="3"
       onClick={[Function]}
     >
       3
@@ -30,6 +33,7 @@ exports[`render component renders component 1`] = `
     <styled.a
       className="m-2"
       href="#"
+      key="4"
       onClick={[Function]}
     >
       4
@@ -37,6 +41,7 @@ exports[`render component renders component 1`] = `
     <styled.a
       className="m-2"
       href="#"
+      key="5"
       onClick={[Function]}
     >
       5
@@ -44,6 +49,7 @@ exports[`render component renders component 1`] = `
     <styled.a
       className="m-2"
       href="#"
+      key="6"
       onClick={[Function]}
     >
       6
@@ -51,6 +57,7 @@ exports[`render component renders component 1`] = `
     <styled.a
       className="m-2"
       href="#"
+      key="7"
       onClick={[Function]}
     >
       7

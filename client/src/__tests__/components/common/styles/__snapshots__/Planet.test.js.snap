@@ -17,9 +17,10 @@ exports[`render component renders card 1`] = `
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
   border-radius: 5px;
   z-index: 2;
+  width: 80%;
 }
 
-<section
+<tr
   className="c0"
 />
 `;
@@ -52,7 +53,7 @@ exports[`render component renders wrapper 1`] = `
   transition: all 0.3s;
 }
 
-<div
+<tr
   className="c0"
 />
 `;
