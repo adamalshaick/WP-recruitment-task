@@ -13,6 +13,7 @@ export const PlanetCard = styled.tr`
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
   z-index: 2;
+  width: 80%;
 `;
 
 export const PlanetWrapper = styled.tr`

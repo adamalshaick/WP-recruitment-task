@@ -17,7 +17,8 @@ export const PlanetInfo = ({ active, planet }) => {
           <p>orbital period: {planet.orbital_period}</p>
           <p>diameter: {planet.diameter}</p>
           <p>climate: {planet.climate}</p>
-
+        </div>
+        <div style={{ margin: "1rem" }}>
           <p>
             films:
             {active
@@ -28,10 +29,6 @@ export const PlanetInfo = ({ active, planet }) => {
           </p>
         </div>
         <div style={{ margin: "1rem" }}>
-          <p>surface water: {planet.surface_water}</p>
-          <p>population: {planet.population}</p>
-          <p>terrain: {planet.terrain}</p>
-          <p>gravity: {planet.gravity}</p>
           <p>
             residents:
             {active
@@ -40,6 +37,12 @@ export const PlanetInfo = ({ active, planet }) => {
                 })
               : null}
           </p>
+        </div>
+        <div style={{ margin: "1rem" }}>
+          <p>surface water: {planet.surface_water}</p>
+          <p>population: {planet.population}</p>
+          <p>terrain: {planet.terrain}</p>
+          <p>gravity: {planet.gravity}</p>
         </div>
       </div>
     </PlanetCard>

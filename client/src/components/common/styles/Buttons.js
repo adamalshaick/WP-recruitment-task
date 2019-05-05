@@ -6,8 +6,7 @@ export const ButtonsCard = styled.span`
   width: 500px;
   height: 50px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  position: absolute;
-  bottom: 10%;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
 `;
